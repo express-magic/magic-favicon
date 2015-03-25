@@ -1,8 +1,8 @@
 import favicon from 'serve-favicon';
 import {existsSync} from 'fs';
 
-var hasFavicon = false
-  , faviconChecked = false
+var exists = false
+  , checked = false
 ;
 
 export function fav(app, dir) {
@@ -11,13 +11,13 @@ export function fav(app, dir) {
   ;
 
   //fs.existsSync only gets called once on first request
-  if ( ! faviconChecked && ! faviconExists ) {
-    faviconChecked = true;
-    faviconExists = existsSync(favDir);
+  if ( ! checked && ! exists ) {
+    checked = true;
+    exists = existsSync(favDir);
   }
 
   //this will get executed every request if the favicon exists
-  if ( faviconExists ) {
+  if ( exists ) {
     app.use(favicon(favDir));
   }
 }

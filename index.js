@@ -11,21 +11,21 @@ var favicon = _interopRequire(require("serve-favicon"));
 
 var existsSync = require("fs").existsSync;
 
-var hasFavicon = false,
-    faviconChecked = false;
+var exists = false,
+    checked = false;
 
 function fav(app, dir) {
   var cwd = process.cwd(),
       favDir = dir || app.get("faviconDir") || join(cwd, "favicon.ico");
 
   //fs.existsSync only gets called once on first request
-  if (!faviconChecked && !faviconExists) {
-    faviconChecked = true;
-    faviconExists = existsSync(favDir);
+  if (!checked && !exists) {
+    checked = true;
+    exists = existsSync(favDir);
   }
 
   //this will get executed every request if the favicon exists
-  if (faviconExists) {
+  if (exists) {
     app.use(favicon(favDir));
   }
 }

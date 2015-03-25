@@ -1,6 +1,6 @@
 {
   "name": "magic-favicon",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "serves a favicon using serve-favicon if it exists, ! uses existsSync on first request !",
   "author": "Jascha Ehrenreich <jascha@jaeh.at>",
   "license": "AGPL",
