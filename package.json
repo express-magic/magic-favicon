@@ -1,0 +1,29 @@
+{
+  "name": "magic-favicon",
+  "version": "0.0.1",
+  "description": "serves a favicon using serve-favicon if it exists, ! uses existsSync on first request !",
+  "author": "Jascha Ehrenreich <jascha@jaeh.at>",
+  "license": "AGPL",
+  "main": "index.js",
+  "scripts": {
+    "clean": "bin/clean",
+    "prepub": "bin/build",
+    "release": "bin/build && bin/release",
+    "setup": "bin/install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/express-magic/magic-favicon"
+  },
+  "bugs": {
+    "url": "https://github.com/express-magic/magic-favicon/issues"
+  },
+  "homepage": "https://github.com/express-magic/magic-favicon",
+  "dependencies": {
+    "express": "^4.12.3",
+    "serve-favicon": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel": "^4.7.16"
+  }
+}

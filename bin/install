@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo 'install npm dependencies'
+npm install
+
+echo 'compiling babel source files'
+./bin/build
+
+echo 'done'

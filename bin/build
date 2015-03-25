@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo 'babelify main app'
+node_modules/.bin/babel \
+  src/ \
+  --out-file index.js \
+;

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo 'publishing via npm'
+npm publish ./
