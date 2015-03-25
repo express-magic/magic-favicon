@@ -1,6 +1,6 @@
 {
   "name": "magic-favicon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "serves a favicon using serve-favicon if it exists, ! uses existsSync on first request !",
   "author": "Jascha Ehrenreich <jascha@jaeh.at>",
   "license": "AGPL",
@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/express-magic/magic-favicon",
   "dependencies": {
-    "express": "^4.12.3",
     "serve-favicon": "^2.2.0"
   },
   "devDependencies": {
