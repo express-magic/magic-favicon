@@ -2,6 +2,6 @@
 
 echo 'babelify main app'
 node_modules/.bin/babel \
-  src/ \
+  src/favicon.js \
   --out-file index.js \
 ;
